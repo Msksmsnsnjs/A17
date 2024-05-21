@@ -131,7 +131,7 @@ module.exports = async function startA17() {
     //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
-  /*  A17.ev.on("connection.update", async (update) => {
+    A17.ev.on("connection.update", async (update) => {
       const { connection, lastDisconnect } = update;
       if (connection === "close") {
         let reason = lastDisconnect.error
@@ -164,7 +164,7 @@ module.exports = async function startA17() {
           console.log(`Unknown DisconnectReason: ${reason}|${connection}`);
         }
       }
-  */    //console.log('Connected...', update)
+      //console.log('Connected...', update)
       else if (connection === 'open') {
         const userName = A17.user.name ? A17.user.name : global.BotName;
 
