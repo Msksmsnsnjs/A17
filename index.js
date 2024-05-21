@@ -125,12 +125,12 @@ module.exports = async function startA17() {
       }, 3000);
     }
 
-    A17.ev.on("creds.update", await saveCreds);
+    A17.ev.on("creds.update", saveCreds);
 
 
     //-------------------------------------------------------------------------------------------------------------------------------------//
 
-
+/*
     A17.ev.on("connection.update", async (update) => {
       const { connection, lastDisconnect } = update;
       if (connection === "close") {
@@ -175,7 +175,7 @@ module.exports = async function startA17() {
       }
     });
 
-
+*/
     //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
